@@ -1,9 +1,16 @@
 .ListItem{
   border: 1px solid black;
   margin: 5px;
+  padding: 10px;
 }
 
 #app{
   width: 50%;
   margin: 0px auto;
+}
+
+.AddItem {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
 }
