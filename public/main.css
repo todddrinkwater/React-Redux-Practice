@@ -1,12 +1,9 @@
-.dot {
-  width: 2rem;
-  height: 2rem;
-  border: 1px #ccc solid;
-  border-radius: 50%;
+.ListItem{
+  border: 1px solid black;
+  margin: 5px;
 }
 
-button {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+#app{
+  width: 50%;
+  margin: 0px auto;
 }
