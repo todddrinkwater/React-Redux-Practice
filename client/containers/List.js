@@ -1,11 +1,19 @@
 import React from 'react'
+import listData from  '../../server/db'
 
 import ListItem from '../components/ListItem'
+
 
 function List (){
   return(
     <div>
-      <ListItem />
+      {listData.map((task) => {
+        return (
+          <ListItem {...task}/>
+        )
+      })}
+
+
     </div>
   )
 }
