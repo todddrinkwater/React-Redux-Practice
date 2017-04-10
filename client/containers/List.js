@@ -1,23 +1,26 @@
 import React from 'react'
-import listData from  '../../server/db'
+import { connect } from 'react-redux'
 
 import ListItem from '../components/ListItem'
 
 
-function List (){
+function List (props){
   return(
     <div>
-      {listData.map((task) => {
+      {props.tasks.map((task) => {
         return (
           <ListItem {...task}/>
         )
       })}
-
-
     </div>
   )
 }
 
 
+const mapStateToProps = (state) => {
+  return {
+    tasks: state.tasks
+  }
+}
 
-export default List
+export default connect(mapStateToProps)(List)
