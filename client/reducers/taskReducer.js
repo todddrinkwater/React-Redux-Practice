@@ -21,7 +21,19 @@ const initialState =  [
 
 
 const tasks = (state = initialState, action) => {
+  console.log(action.newTask);
   switch (action.type) {
+
+    case 'ADD_TASK' :
+      const newState = [
+        ...state,
+        {
+          taskName: action.newTask.taskName,
+          due: action.newTask.due,
+          description: action.newTask.description
+        }
+      ]
+      return newState
 
     default:
       return state
