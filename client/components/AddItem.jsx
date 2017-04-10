@@ -6,7 +6,7 @@ function AddItem (){
       <form>
         <h2>Create New Task</h2>
         Task:<input type="text" name="taskName" /><br />
-        Due Date:<input type="text" name="due" /><br />
+        Due Date:<input type="date" name="due" /><br />
         Description:<input type="text" name="description" /><br />
         <button>Submit</button>
       </form>

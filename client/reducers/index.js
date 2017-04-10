@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux'
 
-import words from './words'
+import taskReducer from './taskReducer'
 
 export default combineReducers({
-  words
+  tasks: taskReducer
 })
-
